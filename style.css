@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#ffb4c9;
+    display: grid;
+    /* gap: 10px; */
+    grid-template-areas:
+    "cabeca cabeca cabeca cabeca cabeca cabeca cabeca"
+    "segundario principal principal principal  principal principal principal "
+    "rodape rodape rodape rodape rodape rodape rodape";
+    grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto auto auto auto;
+    font-family:'Indie Flower',cursive;
+
+
+    
+}
+@media only screen and ( max-width:400px){
+    body{
+        grid-template-areas: 
+        'cabeca'
+        'segundario'
+        'principal'
+        'rodape';
+        grid-template-columns: auto;
+        grid-template-rows:  auto auto auto auto;
+
+    }
+    
+} 
+
+
+header{
+    grid-area: cabeca;
+    background-color: #B1FDFF;
+    display: flex;
+    height: 200px;       
+}
+main{
+    grid-area: principal;
+    background-color:#ffb4c9;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+   
+}
+
+main img{
+    width: 150px;
+    height: 150px;
+}
+aside{
+    grid-area: segundario;
+    background-image: linear-gradient(to right,rgb(255, 244, 181),rgba(238, 229, 177, 0.801),#ffb4c9);
+    width: 180px;
+}
+footer{
+    grid-area: rodape;
+    background-color:#BDF6E3;
+}
+
+footer img{
+    width: 300px;
+    height: 100px;
+    margin-top: 5px;
+}
+.rd{
+    background-color: #ff7cd8;
+    width: 250px;
+    height: 25px;
+    color: white;
+    text-align: center;
+}
+
+.logo{
+    position:relative;
+    left: auto;
+    /* display: flex;
+    text-align: center; */
+    display: block;
+    margin: 0px auto;
+     /* justify-content: center; */
+}
+
+
+/* configuraçao dos cards */
+.card{
+    border-radius: 10px;
+    width: 250px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:#fcdbe4;
+    margin: 15px;  
+    flex-wrap: wrap;
+    flex: 10;
+
+}
+
+
+.card img{
+    width: 180px;
+    /* height: 180px; */
+    border-radius: 6px;
+    margin: 20px;
+    margin-top: -8px;
+}
+
+
+/* configuraçoes dos botoes */
+.botao{
+    background-color: #C64469;
+    display: block;
+    height: 25px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    margin: 10px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+/* posicao dos cards */
+.caixamae{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* final da configuraçao dos cards */
+
+/* configuraçao do menu */
+.menu nav{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(236, 205, 104);
+    width: 50px;
+    transition: all 0.5s ease;
+    position: relative;
+    margin: 5px;
+}
+.menu li{
+    list-style: none;
+    color: #fffbfb;
+    padding: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+.menu li a{
+    color:#72CBFF;
+    text-decoration: none;
+}
+.menu a span{
+    font-size: 0;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+.menu label{
+    font-size: 28px;
+    padding-left: 16px;
+
+}
+
+.botaoz{
+    display: none;
+    color: #72CBFF;
+}
+.botaoz:checked+nav{
+    width: 200px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.botaoz:checked+nav li{
+    border-bottom: dashed 1px rgb(248, 233, 147) ;
+    text-align: left;
+}
+
+.botaoz:checked+nav li:last-child{
+    border: none;
+}
+
+.botaoz:checked+nav a span{
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.fa-bars:hover{
+    color: white;
+    text-shadow: 1px 1px 8px #fcdbe4;
+}
+
+.menu li a:hover{
+    color: #ff7cd8;
+    text-shadow: 0 0 5px white;
+}
+/* final das configuracoes do menu */
+

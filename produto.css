@@ -1,0 +1,176 @@
+*{
+    margin: 0%;
+}
+body{
+    background-color:#f0f8ff;
+    display: grid;
+    /* grid-gap:10px; */
+    grid-template-areas:
+    "cima cima cima cima cima  "
+    "meio meio meio lado lado"
+    "baixo baixo baixo baixo baixo";
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto;
+    font-family:'Indie Flower',cursive;
+}
+@media only screen and ( max-width:400px){
+    body{
+        grid-template-areas: 
+        'cima'
+        'meio'
+        'lado'
+        'baixo';
+        grid-template-columns: auto;
+        grid-template-rows:  auto auto auto auto;
+
+    }
+    
+} 
+
+header{
+    grid-area: cima ;
+    background-color: #BDF6E3;
+    display: flex;
+    height: 200px;             
+}
+main{
+    grid-area: lado;
+    background-color:rgb(248, 233, 147);
+    font-size:larger;
+    font-size: 20px;
+
+}
+aside{
+    grid-area: meio;
+    background-color:#ffb4c9;
+}
+footer{
+    grid-area: baixo;
+    background-color:#BDF6E3; 
+}
+footer img{
+    width: 200px;
+    height: 95px;
+    margin-top: 5px;
+
+} 
+
+/* configuracao da escrita do footer */
+.rd{
+    background-color: #ff7cd8;
+    width: 250px;
+    height: 25px;
+    color: white;
+    text-align: center;
+}
+
+/* configuracao do logotipo */
+.logo{
+    position:relative;
+    left: auto;
+    /* display: flex;
+    text-align: center; */
+    display: block;
+    margin: 0px auto;
+     /* justify-content: center; */
+}
+
+/* inicio da configuracao do card que esta com o produto */
+.card1{
+    border-radius: 10px;
+    width: 750px;
+    height: 520px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-items: center; */
+    margin: 20px;
+    background-color:#f57ea0;
+    /* justify-content: center; */
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+/* confiracao da imagem */
+.card1 img{
+    width: 250px;
+    height:250px;
+    border-radius: 6px;
+    margin: 50px;
+    margin-left: -300px;
+    /* width: 300px;
+    height: 300px; */
+    /* margin-top: -100px; */
+}
+
+/* configuracao da escrita */
+.card1  a{
+    border-radius: 30px;
+    background-color:#f5cdd8;
+    display: block;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+}
+
+ .lt1{
+    /* margin-top: -10px; */
+    font-size: 35px;
+    color: #0e0d0dcb;
+    /* margin-top: 200; */
+}
+
+.lt2{
+    margin-left: 300px;
+    margin-top:45px;
+    font-size: 55px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.lt3{
+    margin-left: 300px;
+    margin-top: 20px;
+    font-size: 25px;
+   
+}
+
+.lt4{
+    margin-left: 300px;
+    margin-top: -290px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+
+/* final da configuracao do card que esta com o produto */
+
+/* inicio da configuracao do card que esta com as informacoes sobre o produto */
+.card2{
+    position: relative;
+    border-radius: 10px;
+    width: 500px;
+    height: 520px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color:#fcfbdb;
+    /* line-height: 30px; */
+    text-align: center;
+    /* transform: translateY(-50PX); */
+
+}
+
+/* configuracao de uma parte da escrita */
+ul{
+    text-align: left;
+}
+ 
+
+
+
