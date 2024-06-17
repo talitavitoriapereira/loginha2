@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/* configuraçao do grid */
 body{
     background-color:#ffb4c9;
     display: grid;
@@ -30,11 +31,11 @@ body{
     }
     
 } 
-
+/* final da configuraçao do grid */
 
 header{
     grid-area: cabeca;
-    background-color: #B1FDFF;
+    background-color: #b1fcffe1;
     display: flex;
     height: 200px;       
 }
@@ -58,7 +59,7 @@ aside{
 }
 footer{
     grid-area: rodape;
-    background-color:#BDF6E3;
+    background-color:#bdf6e3d8;
 }
 
 footer img{
@@ -95,10 +96,11 @@ footer img{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color:#fcdbe4;
+    background-color:#f8dde4;
     margin: 15px;  
     flex-wrap: wrap;
     flex: 10;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.781);
 
 }
 
@@ -124,6 +126,7 @@ footer img{
     margin: 10px;
     border-radius: 30px;
     margin-top: 30px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.849);
 }
 /* posicao dos cards */
 .caixamae{
@@ -202,4 +205,5 @@ footer img{
     text-shadow: 0 0 5px white;
 }
 /* final das configuracoes do menu */
+
 

@@ -1,0 +1,128 @@
+
+body{
+    background-color:aliceblue;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+    "cabeca"
+    "principal"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    text-align: center;
+    font-family:'Indie Flower',cursive;
+}
+@media only screen and ( max-width:800px){
+    body{
+        grid-template-areas: 
+        'cabeca'
+        'segundario'
+        'principal'
+        'rodape';
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+
+    }
+    
+} 
+
+header{
+    grid-area: cabeca;
+    /* background-color:#ED8AA6; */
+    display: flex;
+    height: 200px;
+
+        
+}
+main{
+    grid-area: principal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-size: 25px;
+
+}
+/* aside{
+    grid-area: segundario;
+    background-color:bisque;
+} */
+footer{
+    grid-area: rodape;
+    /* background-color:#ED8AA6 */
+}
+
+div{
+    border-radius: 2px;
+    /* background-color: #ff95b3; */
+    margin: 20px;
+    font-size: 25px;
+}
+ 
+div a{
+    margin-top: 10px;
+    /* color: #ffc7d7; */
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    
+}
+ 
+body{       
+    background: url("img/fundo.jfif") center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 200px;
+    
+    
+    
+}
+
+.formulario{
+    background-color:#fad1dc;
+    /* display: flex; */
+    height: 480px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top:-100px;
+    background-image: linear-gradient(#9df5f5bb,#fabece);
+    position: relative;
+    box-shadow:  3px 3px 9px rgba(255, 255, 255, 0.37);
+
+
+}
+
+button{
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-top:10/px;
+    font-size: 18px;
+    background-color: #ffcff5;
+    border-color: rgba(241, 138, 219, 0.623);
+    box-shadow: none;
+
+}
+
+/* header{
+    grid-area: cabeca;
+    background-color: #BDF6E3;
+    display: flex;
+    height: 200px;       
+}
+
+.logo{
+    position:relative;
+    left: auto;
+    display: flex;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+     justify-content: center;
+} */
+
+

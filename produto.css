@@ -29,7 +29,7 @@ body{
 
 header{
     grid-area: cima ;
-    background-color: #BDF6E3;
+    background-color: #bdf6e3e1;
     display: flex;
     height: 200px;             
 }
@@ -43,14 +43,17 @@ main{
 aside{
     grid-area: meio;
     background-color:#ffb4c9;
+    background-image: linear-gradient(to left,rgb(248, 233, 147),rgb(238, 229, 177, 0.801),#ffb4c9,#ffb4c9);
+
+    
 }
 footer{
     grid-area: baixo;
-    background-color:#BDF6E3; 
+    background-color:#bdf6e3e1; 
 }
 footer img{
-    width: 200px;
-    height: 95px;
+    width: 300px;
+    height: 100px;
     margin-top: 5px;
 
 } 
@@ -90,7 +93,8 @@ footer img{
     font-size: 20px;
     text-align: center;
     align-items: center;
-    
+    background-image: linear-gradient(to right,rgba(248, 233, 147, 0.726),rgba(238, 229, 177, 0.76),#ffb4c9d3,#ffb4c9d8);
+
 }
 
 /* confiracao da imagem */
@@ -128,7 +132,7 @@ footer img{
     margin-left: 300px;
     margin-top:45px;
     font-size: 55px;
-    color: rgba(255, 255, 255, 0.877);
+    color: white;
 }
 
 .lt3{
@@ -142,7 +146,7 @@ footer img{
     margin-left: 300px;
     margin-top: -290px;
     font-size: 20px;
-    color: rgba(255, 255, 255, 0.877);
+    color: rgb(255, 255, 255);
 }
 
 
@@ -160,10 +164,11 @@ footer img{
     align-items: center;
     margin: 20px;
     background-color:#fcfbdb;
+    padding: 5px;
     /* line-height: 30px; */
     text-align: center;
     /* transform: translateY(-50PX); */
-
+   
 }
 
 /* configuracao de uma parte da escrita */
@@ -171,6 +176,7 @@ ul{
     text-align: left;
 }
  
+
 
 
 
