@@ -37,7 +37,8 @@ header{
     grid-area: cabeca;
     background-color: #b1fcffe1;
     display: flex;
-    height: 200px;       
+    height: 200px;    
+    background-image: linear-gradient(#b1fcffe1,rgba(255, 255, 255, 0.664) );   
 }
 main{
     grid-area: principal;
@@ -54,7 +55,7 @@ main img{
 }
 aside{
     grid-area: segundario;
-    background-image: linear-gradient(to right,rgb(255, 244, 181),rgba(238, 229, 177, 0.801),#ffb4c9);
+    background-image: linear-gradient(to right,rgba(255, 244, 181, 0.836),rgba(238, 229, 177, 0.644),#ffb4c9a1);
     width: 180px;
 }
 footer{
@@ -203,6 +204,13 @@ footer img{
 .menu li a:hover{
     color: #ff7cd8;
     text-shadow: 0 0 5px white;
+}
+
+.icons{
+    width: 25px;
+}
+.icon{
+    width: 30px;
 }
 /* final das configuracoes do menu */
 

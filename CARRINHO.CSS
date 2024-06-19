@@ -37,6 +37,8 @@ header{
     background-color: #B1FDFF;
     display: flex;
     height: 200px;       
+    background-image: linear-gradient(#b1fcffe1,rgba(255, 255, 255, 0.664) );   
+
 }
 main{
     grid-area: principal;
@@ -53,7 +55,7 @@ main img{
 }
 aside{
     grid-area: segundario;
-    background-image: linear-gradient(to right,rgb(255, 244, 181),rgba(238, 229, 177, 0.801),#ffb4c9);
+    background-image: linear-gradient(to right,rgba(255, 244, 181, 0.596),rgba(238, 229, 177, 0.432),#ffb4c9ad);
     width: 180px;
 }
 footer{
@@ -102,7 +104,6 @@ footer img{
 
 }
 
-
 .card img{
     width: 180px;
     /* height: 180px; */
@@ -110,6 +111,7 @@ footer img{
     margin: 20px;
     margin-top: -8px;
 }
+
 
 
 /* configuraçoes dos botoes */
@@ -203,9 +205,6 @@ footer img{
 }
 /* final das configuracoes do menu */
 
-.tc{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+button{
+    color: #C64469;
 }
-
