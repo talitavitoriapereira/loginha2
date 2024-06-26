@@ -154,7 +154,7 @@ footer img{
     font-size: 23px;
 }
 .menu li a{
-    color:#72CBFF;
+    color:#000000;
     text-decoration: none;
 }
 .menu a span{
@@ -201,7 +201,7 @@ footer img{
 }
 
 .menu li a:hover{
-    color: #ff7cd8;
+    color: #368bbd;
     text-shadow: 0 0 5px white;
 }
 
