@@ -101,7 +101,7 @@ footer img{
     margin: 15px;  
     flex-wrap: wrap;
     flex: 10;
-
+    padding: 10px;
 }
 
 .card img{
@@ -109,7 +109,8 @@ footer img{
     /* height: 180px; */
     border-radius: 6px;
     margin: 20px;
-    margin-top: -8px;
+    margin-top: 16px;
+
 }
 
 
@@ -203,8 +204,51 @@ footer img{
     color: #ff7cd8;
     text-shadow: 0 0 5px white;
 }
+
+.icons{
+    width: 25px;
+}
+.icon{
+    width: 30px;
+}
 /* final das configuracoes do menu */
 
+.lixo{
+    width: 15px;
+    height: 15;
+}
+
 button{
-    color: #C64469;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin-top:10px;
+    font-size: 18px;
+    background-color: #b1fcffde;
+    border-color: rgba(241, 138, 219, 0.623);
+    box-shadow: none;
+    margin-left: 450px;
+    margin-bottom: 10px;
+
+
+}
+
+.l{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 300px;
+    background-color: #c64469af;
+    width: 500px;
+}
+
+.lt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -100px;
+    color: rgba(255, 0, 0, 0.678);
 }
